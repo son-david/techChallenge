@@ -1,3 +1,5 @@
+// This is where the interaction with GM's api occurs, as well as restructuring of the data received.
+
 var request = require('request');
 
 module.exports = {

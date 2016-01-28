@@ -1,3 +1,5 @@
+// This is where the routes are defined for requests to /vehicles
+
 var express = require('express');
 var router = express.Router();
 var services = require('./services');

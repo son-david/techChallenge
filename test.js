@@ -1,3 +1,5 @@
+// These are unit functional tests for each api endpoint
+
 var expect = require('chai').expect;
 var request = require('request');
 
