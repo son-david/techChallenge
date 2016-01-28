@@ -96,8 +96,7 @@ describe('Smartcar api: ', function() {
 
       request.post({url:'http://localhost:3000/vehicles/1234/engine', body: {'action':'START'}, json:true}, function(err, response, body) {
 
-        var dataReturned = body;
-        expect(dataReturned).to.be.an('object').with.property('status').that.is.a('string');
+        expect(body).to.be.an('object').with.property('status').that.is.a('string');
         done();
 
       });
@@ -107,8 +106,7 @@ describe('Smartcar api: ', function() {
 
       request.post({url:'http://localhost:3000/vehicles/1234/engine', body: {'action':'STOP'}, json:true}, function(err, response, body) {
 
-        var dataReturned = body;
-        expect(dataReturned).to.be.an('object').with.property('status').that.is.a('string');
+        expect(body).to.be.an('object').with.property('status').that.is.a('string');
         done();
 
       });
