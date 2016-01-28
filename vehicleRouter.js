@@ -1,4 +1,4 @@
-// This is where the routes are defined for requests to /vehicles
+// This is where the routes are defined for requests to /vehicles, mapped to their respective functions in 'services'
 
 var express = require('express');
 var router = express.Router();
