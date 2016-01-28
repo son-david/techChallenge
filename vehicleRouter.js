@@ -8,7 +8,7 @@ router.get('/:id/doors', services.security);
 
 router.get('/:id/fuel', services.fuelBattery);
 
-router.get('/:id/batteries', services.fuelBattery);
+router.get('/:id/battery', services.fuelBattery);
 
 router.post('/:id/engine', services.engine);
 

@@ -70,7 +70,7 @@ function fuelBattery(req, res) {
 
     if (param === 'fuel') {
       res.status(200).send(tank);
-    } else if (param === 'batteries') {
+    } else if (param === 'battery') {
       res.status(200).send(battery);
     }
 
@@ -91,14 +91,13 @@ function engine(req, res) {
     };
 
     var status;
-
     if (body.actionResult.status === 'EXECUTED') {
       status = 'success'
     } else if (body.actionResult.status === 'FAILED') {
       status = 'error'
     }
 
-    res.status(200).send({status : status});
+    res.status(200).send({status: status});
 
   });
 };
